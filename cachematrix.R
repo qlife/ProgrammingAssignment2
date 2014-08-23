@@ -45,6 +45,7 @@ cacheSolve <- function(x, ...) {
         ## Check if we've have the cache already
         cache <- x$get_inv()
         if(!is.null(cache)) {
+                message("getting cached data")
                 return(cache)
         }
 
